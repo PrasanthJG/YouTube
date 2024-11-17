@@ -1,0 +1,1083 @@
+/* 
+
+main{
+  width: 100%;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.Sidebar{
+  display: flex;
+}
+
+.sidebar{
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: calc(97vh - 50px);
+  padding: 15px 10px;
+  box-shadow: 0 0 2px rgba(0, 0, 0,0.1);Mathammal0427
+  
+  transition: all 0.5s ease;
+  overflow-x: auto;
+  box-shadow: 0 0 2px black;
+  
+}
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+  display: none;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: grey; 
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: grey; 
+}
+
+.sdidebar .option{
+  margin-bottom: 10px;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 0px 30px;
+  gap: 20px;
+  width: 250px;
+  
+}
+
+.sidebar .option:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(203, 199, 199);
+  border-radius: 10px;
+  cursor: pointer;
+} 
+
+.sidebar .icon{
+  margin: 10px 10px 10px 10px;
+  width: 70px;
+  height: 23px;
+}
+
+
+.sidebar .icons{
+  margin: 10px 10px 10px 10px;
+  width: 40px;
+  height: 17px;
+}
+
+.sidebar .icons:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(203, 199, 199);
+  border-radius: 10px;
+  cursor: pointer;
+} 
+
+.para{
+  margin-left: 10px;
+}
+#youtube{
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #sidebarOpen {
+    font-size: 10px;
+    position: fixed;
+    display: block;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    color: var(--grey-color);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .icon {
+    font-size: 20px;
+    width: 100%;
+  }
+  #youtube{
+    display: flex;
+  }
+  
+} */
+
+
+
+/* .sidebar_name {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 100px;
+  padding: 20px;
+}
+.Sidebar{
+    display: flex;
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+}
+@media screen and (max-width: 768px) {
+  #sidebarOpen {
+    font-size: 10px;
+    position: fixed;
+    display: block;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    color: var(--grey-color);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .icon {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  .Sidebar_name {
+    margin-left: 20%;
+    font-size: 10px;
+    height: 50vh;
+  }
+} */
+
+/* .Sidebar {
+  display: flex;
+}
+
+.sidebar {
+  width: 270px;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-transform: none;
+  outline: none;
+}
+
+.option {
+  margin-bottom: 10px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+option a {
+  text-decoration: none;
+  color: white;
+}
+
+option a:hover {
+  color: lightgray;
+}
+
+main {
+  flex-grow: 1;
+} */
+
+/* Sidebar */
+.Sidebar {
+  display: flex;
+}
+
+/*sidebar */
+.sidebar {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100%;
+  padding: 10px 20px;
+  box-shadow: 0 0 1px var(--color-gray);
+  transition: all 0.5s ease;
+  overflow-x: auto;
+  overflow-y: scroll;
+}
+.sidebar.close{
+  padding: 60px 0;
+  width: 80px;
+}
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+/* menu_items*/
+.menu_items{
+  padding: 0;
+  list-style: none;
+}
+/* #sidebarOpen */
+
+/* option*/
+
+.option {
+  margin-bottom: 15px;
+}
+
+
+/* icon */
+.sidedbar li Link{
+    list-style: none;
+    height: 100%;
+    text-decoration: none;
+
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+.nav-link {
+  position: relative;
+  font-size: 22px;
+  min-width: 30px;
+  line-height: 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+}
+
+.nav-link::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: calc(100% + 100px);
+  left: -20px;
+}
+.nav-link:hover{
+  background-color: var(--color-gray);
+  color: var(--color-black);
+}
+
+.icon {
+  margin-left: auto;
+  width: 30px;
+  height: 20px;
+  
+}
+.icons {
+  margin-left: auto;
+  width: 30px;
+  height: 20px;
+}
+
+
+/* lines */
+ .lines {
+  margin-left: 10px;
+}
+
+/*para*/
+.para {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+
+#youtube{
+  display: none;
+}
+/* media */
+
+@media screen and (max-width: 768px) {
+  #sidebarOpen {
+    font-size: 10px;
+    position: fixed;
+    display: block;
+   margin: 0px 0px 0px 0px;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    color: var(--grey-color);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .icon {
+    font-size: 20px;
+    width: 100%;
+  }
+  #youtube{
+    display: flex;
+
+  }
+  .line-name{
+    display: none;
+  }
+
+  #SidebarOpen{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* // import React from 'react'
+// import "./sidebar.css"
+// import { MdHomeFilled } from "react-icons/md";
+//import { MdOutlineSubscriptions } from "react-icons/md";
+// import { SiYoutubeshorts } from "react-icons/si";
+// import { BiSolidVideos } from "react-icons/bi";
+// import { Link } from 'react-router-dom';
+
+// const Sidebar = ({children}) => {
+//   return (
+//     <div className="Sidebar">
+//       <div className="sidebar_name" id="sidebarOpen">
+//         <Link className="nav-link " to="/home" className="nav-link ">
+//           <MdHomeFilled className="icon" />
+//           <span className="sidebar_name1">Home</span>
+//         </Link>
+//         <Link className="nav-link " to="/shorts" className="nav-link ">
+//           <SiYoutubeshorts className="icon" />
+//           <span className="sidebar_name1">Shorts</span>
+//         </Link>
+//         <Link className="nav-link " to="subscriptions" className="nav-link ">
+//           <MdOutlineSubscriptions className="icon" />
+//           <span className="sidebar_name1">Subscriptions</span>
+//         </Link>
+//         <Link className="nav-link " to="/you" className="nav-link ">
+//           <BiSolidVideos className="icon" />
+//           <span className="sidebar_name1">You</span>
+//         </Link>
+//       </div>
+//       <main>{children}</main>
+//     </div>
+//   );
+// } */
+/* 
+// export default Sidebar */
+
+
+
+.Sidebar {
+  display: flex;
+  width: 300px;
+}
+
+.sidebar {
+  /* position: relative; */
+  top: 0;
+  left: 0;
+  width: calc(100% - 250px);
+ height: calc(100vh - 60px);
+  padding: 10px 20px;
+  box-shadow: 0 0 1px var(--color-gray);
+  transition: all 0.5s ease;
+  overflow-x: auto;
+  overflow-y: scroll;
+}
+.sidebar.open{
+  left: 78px;
+  width: calc(100% - 78px);
+}
+
+.sidebar .menu_items #btn{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: all 0.4s ease;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.sidebar.close{
+  padding: 60px 0;
+  width: 80px;
+}
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+.menu_items{
+  padding: 0;
+  list-style: none;
+}
+
+.option {
+  margin-bottom: 15px;
+}
+
+.sidedbar li Link{
+    list-style: none;
+    height: 100%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+.nav-link {
+  position: relative;
+  font-size: 22px;
+  min-width: 30px;
+  line-height: 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+}
+
+.nav-link::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: calc(100% + 100px);
+  left: -20px;
+}
+.nav-link:hover{
+  background-color: var(--color-gray);
+  color: var(--color-black);
+}
+
+.icon {
+  margin-left: auto;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+.icons {
+  margin-left: auto;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+ .lines {
+  margin-left: 10px;
+}
+
+.para {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+#youtube{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #sidebarOpen {
+    font-size: 10px;
+    position: fixed;
+    display: block;
+   margin: 0px 0px 0px 0px;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    color: var(--grey-color);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .icon {
+    font-size: 20px;
+    width: 100%;
+  }
+  #youtube{
+    display: flex;
+
+  }
+  .line-name{
+    display: none;
+  }
+
+  #SidebarOpen{
+    display: none;
+  }
+}
+
+.sidebar li Link{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.sidebar li Link .lines{
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+
+.sidebar.open li link .links{
+  opacity: 1;
+  pointer-events: auto;
+}
+.sidebar li Link:hover .links,
+.sidebar li Link:hover .icon{
+  transition: all 0.5s ease;
+  color: #11101D;
+}
+
+.sidebar li .icon{
+  height: 20px;
+  line-height: 50px;
+  font-size: 18px;
+  border-radius: 12px;
+}
+
+.sidebar li{
+  position: relative;
+  margin: 8px 0;
+  list-style: none;
+}
+.sidebar li .tooltip{
+  position: absolute;
+  top: -20px;
+  left: calc(100% + 15px);
+  z-index: 3;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: 0s;
+}
+.sidebar li:hover .tooltip{
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sidebar.open li .tooltip{
+  display: none;
+}
+
+@media (max-width: 420px) {
+  .sidebar li .tooltip{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desktop styles */
+@media (min-width: 769px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #f4f4f4;
+  }
+
+  .name_main {
+    margin-left: 250px;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Off-canvas by default */
+    width: 250px;
+    height: 100%;
+    background: #333;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.open {
+    left: 0; /* Slide in when open */
+  }
+
+  .name_main {
+    margin-left: 0;
+  }
+}
+
+/* Common styles for both desktop and mobile */
+#header {
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_item {
+  display: flex;
+  align-items: center;
+}
+
+.link_icons {
+  color: #333;
+  text-decoration: none;
+}
+
+.link_icons:hover {
+  color: #000;
+}
+
+.image {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.search_bar {
+  display: flex;
+  align-items: center;
+}
+
+.input-group {
+  margin-right: 10px;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  outline: none;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+.button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.navbar_content {
+  display: flex;
+  align-items: center;
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+  .navbar {
+    padding: 10px 40px;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo_item {
+    margin-bottom: 10px;
+  }
+
+  .search_bar {
+    margin-top: 10px;
+  }
+
+  .navbar_content {
+    margin-top: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*============= navbar ============ */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-white);
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  z-index: 1000;
+  overflow-y: scroll;
+  box-shadow: 0 0 2px var(--color-white);
+}
+.navbar .logo_item {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-black);
+  margin-left: 10px;
+}
+
+.navbar img {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+.navbar .profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+ .search_bar {
+  height: 40px;
+  max-width: 650px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.search_bar .link_name {
+  height: 40px;
+  width: 40px;
+  background-color: var(--color-gray);
+  border-radius: 50%;
+}
+
+.search_bar input {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  font-size: 20px;
+  outline: none;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border: 1px solid var(--color-gray);
+  padding: 0 20px;
+}
+
+.search_bar .search {
+  margin-right: 25px;
+}
+.search_bar .button {
+  height: 40px;
+  width: 60px;
+  max-width: 80px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: 1px solid var(--color-gray);
+  margin-right: 25px;
+  column-gap: 20px;
+}
+
+.navbar_content {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.navbar .link {
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--color-black);
+  text-decoration: none;
+  color: var(--color-black);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  align-content: center;
+}
+
+.navbar .link:hover {
+  color: var(--color-white);
+  background-color: var(--color-gray);
+}
+
+.navbar .link .link_name:hover {
+  color: var(--color-black);
+  background-color: var(--color-gray);
+}
+
+/* @media screen and (max-width: 768px) {
+  .link_icons {
+    display: none;
+  }
+  .search_bar {
+    display: none;
+  }
+  .button {
+    display: none;
+  }
+} */
+@media screen and (max-width: 768px) {
+  .link_icons {
+    display: none;
+  }
+  .sidebarOpen {
+    cursor: pointer;
+    color: var(--color-gray);
+  }
+  .sidebar .close {
+    left: -100%;
+  }
+  .search_bar {
+    display: none;
+  }
+  .button {
+    display: none;
+  }
+  .sidebar.close .bottom_content {
+    left: -100%;
+  }
+}
+
+/* ==================== sidebar ==============================*/
+
+
+.Sidebar{
+  display: flex;
+}
+
+.sidebar{
+  position:relative;
+  left: 0;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  padding: 10px 20px;
+  z-index: 100;
+  overflow-y: scroll;
+  box-shadow: 0 0 1px var(--color-gray);
+  transition: all 0.5s ease;
+}
+
+.sidebar.open ~ .name_name {
+  left: 250px;
+  width: calc(100% - 250px);
+}
+
+.sidebar.open {
+  width: 250px;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.menu_content{
+  position: relative;
+}
+
+.menu_items{
+  padding: 0;
+  list-style: none;
+}
+
+
+.option {
+  margin-bottom: 15px;
+}
+
+.sidedbar li Link{
+    list-style: none;
+    height: 100%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+.nav-link {
+  position: relative;
+  font-size: 22px;
+  min-width: 30px;
+  line-height: 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+}
+
+.nav-link::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: calc(100% + 100px);
+  left: -20px;
+}
+.nav-link:hover{
+  background-color: var(--color-gray);
+  color: var(--color-black);
+}
+
+.icon {
+  margin-left: auto;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+.icons {
+  margin-left: auto;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+ .lines {
+  margin-left: 10px;
+}
+
+.para {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+#youtube{
+  display: none;
+}
+#Sidebar_youtube{
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #Sidebar_youtube{
+     display: flex;
+     align-items: flex-start;
+  }
+  #sidebarOpen {
+    font-size: 10px;
+    position: fixed;
+    display: block;
+   margin: 0px 0px 0px 0px;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    color: var(--grey-color);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    /* text-align: center; */
+  }
+  .icon {
+    font-size: 20px;
+    width: 100%;
+  }
+  #youtube{
+    display: flex;
+
+  }
+  .line-name{
+    display: none;
+  }
+
+  #SidebarOpen{
+    display: none;
+  }
+
+  #Sidear_lineName{
+    display: none;
+  }
+}
+
+

@@ -1,0 +1,33 @@
+/* src/components/Card.css */
+.card-container {
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  text-align: center;
+}
+
+.card-description {
+  padding: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.card-btn {
+  display: block;
+  width: 90%;
+  margin: 0 auto 8px;
+  padding: 8px;
+  background-color: #ffffff;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.card-btn:hover {
+  background-color: #ffffff;
+}

@@ -1,0 +1,186 @@
+{
+  "Sidebar": {
+    "isOpen": true,
+    "children": "Replace this with your main content",
+    "sidebarItems": {
+      "home": {
+        "icon": "MdHomeFilled" ,
+        "text": "Home",
+        "link": "/home"
+      },
+      "shorts": {
+        "icon": "SiYoutubeshorts",
+        "text": "Shorts",
+        "link": "/shorts"
+      },
+      "subscriptions": {
+        "icon": "MdOutlineSubscriptions",
+        "text": "Subscriptions",
+        "link": "/Subscriptions"
+      },
+      "you": {
+        "icon": "BiSolidVideos",
+        "text": "You",
+        "link": "/you",
+        "subItems": {
+          "yourChannel": {
+            "icon": "BsPersonSquare",
+            "text": "Your channel",
+            "link": "/yourchannel"
+          },
+          "history": {
+            "icon": "MdHistory",
+            "text": "History",
+            "link": "/history"
+          },
+          "playlists": {
+            "icon": "MdOutlinePlaylistPlay",
+            "text": "Playlists",
+            "link": "/playlists"
+          },
+          "yourVideos": {
+            "icon": "CiYoutube",
+            "text": "Your videos",
+            "link": "/yourvideos"
+          },
+          "watchLater": {
+            "icon": "MdOutlineWatchLater",
+            "text": "Watch Later",
+            "link": "/watchlater"
+          },
+          "likedVideos": {
+            "icon": "BiLike",
+            "text": "Liked videos",
+            "link": "/likedvideos"
+          }
+        }
+      },
+      "explore": {
+        "text": "Explore",
+        "subItems": {
+          "trending": {
+            "icon": "MdOutlineWhatshot",
+            "text": "Trending",
+            "link": "/trending"
+          },
+          "shopping": {
+            "icon": "BsBag",
+            "text": "Shopping",
+            "link": "/shopping"
+          },
+          "music": {
+            "icon": "IoMusicalNoteOutline",
+            "text": "Music",
+            "link": "/music"
+          },
+          "films": {
+            "icon": "PiFilmSlateDuotone",
+            "text": "Films",
+            "link": "/films"
+          },
+          "live": {
+            "icon": "CiStreamOn",
+            "text": "Live",
+            "link": "/live"
+          },
+          "gaming": {
+            "icon": "SiYoutubegaming",
+            "text": "Gaming",
+            "link": "/gaming"
+          },
+          "news": {
+            "icon": "RiNewspaperLine",
+            "text": "News",
+            "link": "/news"
+          },
+          "sport": {
+            "icon": "GoTrophy",
+            "text": "Sport",
+            "link": "/sport"
+          },
+          "courses": {
+            "icon": "LiaLightbulbSolid",
+            "text": "Courses",
+            "link": "/courses"
+          },
+          "fashionAndBeauty": {
+            "icon": "TbHanger2",
+            "text": "Fashion & beauty",
+            "link": "/fashion&beauty"
+          },
+          "podcasts": {
+            "icon": "BiBroadcast",
+            "text": "Podcasts",
+            "link": "/podcasts"
+          }
+        }
+      },
+      "moreFromYouTube": {
+        "text": "More from YouTube",
+        "subItems": {
+          "premium": {
+            "icon": "CiYoutube",
+            "text": "YouTube Premium",
+            "link": "/premium"
+          },
+          "studio": {
+            "icon": "SiYoutubestudio",
+            "text": "YouTube Studio",
+            "link": "/studio"
+          },
+          "music": {
+            "icon": "SiYoutubemusic",
+            "text": "YouTube Music",
+            "link": "/musics"
+          },
+          "kids": {
+            "icon": "TbBrandYoutubeKids",
+            "text": "YouTube Kids",
+            "link": "/kids"
+          }
+        }
+      },
+      "settingsAndHelp": {
+        "text": "Settings & Help",
+        "subItems": {
+          "settings": {
+            "icon": "IoSettingsOutline",
+            "text": "Settings",
+            "link": "/setting"
+          },
+          "reportHistory": {
+            "icon": "MdOutlineOutlinedFlag",
+            "text": "Report history",
+            "link": "/historyYou"
+          },
+          "help": {
+            "icon": "IoIosHelpCircleOutline",
+            "text": "Help",
+            "link": "/help"
+          },
+          "sendFeedback": {
+            "icon": "TbMessageReport",
+            "text": "Send feedback",
+            "link": "/feedback"
+          }
+        }
+      },
+      "footer": {
+        "copyrightText": "© 2024 Google LLC",
+        "footerLinks": [
+          "About",
+          "Press",
+          "Copyright",
+          "Contact us",
+          "Creator",
+          "Advertis",
+          "Developers",
+          "Terms",
+          "Privacy Policy & Safety",
+          "How YouTube works",
+          "Test new features"
+        ]
+      }
+    }
+  }
+}

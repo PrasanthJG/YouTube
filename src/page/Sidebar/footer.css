@@ -1,0 +1,306 @@
+/* .footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 100px;
+  padding: 20px;
+}
+@media screen and (max-width: 768px) {
+  #footerOpen {
+    font-size: 25px;
+    position: fixed;
+    display: block;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    color: var(--grey-color);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .icon {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  .footer_name {
+    margin-left: 2px;
+    font-size: 15px;
+    height: 100vh;
+  }
+} */
+
+/* .nav {
+  height: 60px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  color: white; 
+}
+
+.nav h2 {
+  cursor: pointer;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav i.bi {
+  font-size: 23px;
+  color: white;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav ul li {
+  cursor: pointer; 
+}
+.sidebar-container{
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  width: 250px;
+  height: calc(97vh - 50px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.sidebar-container::-webkit-scrollbar{
+  display: none;
+}
+.nav-option{
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 0px 30px;
+  gap: 20px;
+  width: 250px;
+
+}
+.nav-option:hover 
+,.nav-option .icon
+{
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  cursor: pointer;
+}
+
+.nav-option .icon{
+  color: rgb(255, 255, 255);
+  background-color: #000000;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .navCollapse {
+    width: 60px;
+  }
+  .navCollapse .nav-option h5 {
+    display: none;
+  }
+  .navCollapse .nav-option {
+    padding: 25px;
+  }
+  .smallDeviceIcon{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .largeDeviceIcon{
+    display: none;
+  }
+  .sidebar-container{
+    display: none;
+  }
+  .smallNav{
+    display: block;
+  }
+  .logo h5{
+    display: none;
+  }
+} */
+
+/* *{
+  margin: 0;
+  height: 0;
+  box-sizing: border-box;
+} */
+.user-img {
+  width: 50px;
+  border-radius: 100%;
+  border: 1px solid #eee;
+}
+.Sidebar {
+  display: flex;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 80px;
+  background-color: rgb(29, 158, 239);
+  padding: 0.4rem 0.8rem;
+  transition: all 0.5s ease;
+}
+
+.sidebar.active ~ .main-content {
+  left: 250px;
+  width: calc(100% - 250px);
+}
+
+.sidebar.active {
+  width: 250px;
+}
+
+.sidebar #btn {
+  position:absolute;
+  color: #eee;
+  top: .4rem;
+  left: 50%;
+  font-size: 1.2rem;
+  line-height: 50px;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.sidebar.active #btn {
+  left: 90%;
+}
+
+.sidebar .top .logo {
+  color: #eee;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  pointer-events: none;
+  opacity: 0;
+}
+.sidebar.active .top .logo{
+  opacity: 1;
+}
+
+.top .logo i{
+  font-size: 2rem;
+  margin-right: 5px;
+}
+
+.user{
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.user p{
+  color: white;
+  opacity: 1;
+  margin-left: 1rem;
+}
+
+.bold{
+  font-weight: 600;
+}
+
+.sidebar p{
+  opacity: 0;
+}
+
+.sidebar.active p{
+  opacity: 1;
+}
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* .sidebar ul li{
+  position: relative;
+  list-style-type: none;
+  height: 50px;
+  width: 90%;
+  margin:  0.8rem auto;
+  line-height: 50px;
+} */
+
+.sidebar ul li a{
+  color:#eee;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 0.8rem;
+}
+
+.sidebar ul li a:hover{
+  background-color: white;
+  color: #000;
+}
+
+.sidebar ul li a i{
+  min-width: 50px;
+  text-align: center;
+  height: 50px;
+  border-radius: 12px;
+  line-height: 50px;
+}
+.sidebar .nav-item{
+  opacity: 0;
+}
+
+.sidebar.active .nav-item{
+  opacity: 1;
+}
+
+/* .sidebar ul li .tooltip_name{
+  position: absolute;
+  left: 125px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0.5rem 0.8rem rgba(0,0,0,0.2);
+  border-radius: .6rem;
+  padding: .4rem 1.2rem;
+  line-height: 1.8rem;
+  z-index: 20;
+  opacity: 0;
+}
+
+.sidebar ul li:hover .tooltip_name{
+  opacity: 1;
+}
+
+
+.sidebar.active ul li .tooltip_name{
+  display: none;
+}
+
+.main-content{
+  position: relative;
+  background-color: #eee;
+  min-height: 100vh;
+  top: 0;
+  left: 80px;
+  transition: all 0.5s ease;
+  width: calc(100% - 80px);
+  padding: 1rem;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+} */
+

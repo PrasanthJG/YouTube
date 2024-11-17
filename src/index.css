@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,1788 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+
+/* @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+:root {
+  --color-black: #000000;
+  --color-gray: #aaa;
+  --color-red: #ff0000;
+  --color-blue: #0000ff;
+  --color-orange: #ffa500;
+  --color-white: #ffffff;
+  --color-brown: #a52a2a;
+  --color-pink: #ffc0cb;
+  --color-yellow: #ffff00;
+  --color-green: #008000;
+  --color-purple: #800080;
+}
+.body {
+  min-height: 100vh;
+  font-family: "Rubik", sans-serif;
+}
+
+a {
+  text-transform: none;
+  cursor: pointer;
+  display: inline-block;
+}
+a:hover {
+  text-decoration: none;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: inherit;
+}
+
+main{
+  width: 100%;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-white);
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  z-index: 1000;
+  box-shadow: 0 0 2px var(--color-white);
+}
+.navbar .logo_item {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-black);
+  margin-left: 10px;
+}
+
+.navbar img {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+.navbar .profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+ .search_bar {
+  height: 40px;
+  max-width: 650px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.search_bar .link_name {
+  height: 40px;
+  width: 40px;
+  background-color: var(--color-gray);
+  border-radius: 50%;
+}
+
+.search_bar input {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  font-size: 20px;
+  outline: none;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border: 1px solid var(--color-gray);
+  padding: 0 20px;
+}
+
+.search_bar .search {
+  margin-right: 25px;
+}
+.search_bar .button {
+  height: 40px;
+  width: 60px;
+  max-width: 80px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: 1px solid var(--color-gray);
+  margin-right: 25px;
+  column-gap: 20px;
+}
+
+.navbar_content {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.navbar .link {
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--color-black);
+  text-decoration: none;
+  color: var(--color-black);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  align-content: center;
+}
+
+.navbar .link:hover {
+  color: var(--color-white);
+  background-color: var(--color-gray);
+}
+
+.navbar .link .link_name:hover {
+  color: var(--color-black);
+  background-color: var(--color-gray);
+}
+
+
+@media screen and (max-width: 768px) {
+  .link_icons {
+    display: none;
+  }
+  .sidebarOpen {
+    cursor: pointer;
+    color: var(--color-gray);
+  }
+  .sidebar .close {
+    left: -100%;
+  }
+  .search_bar {
+    display: none;
+  }
+  .button {
+    display: none;
+  }
+  .sidebar.close .bottom_content {
+    left: -100%;
+  }
+}
+
+
+
+
+.Sidebar{
+  display: flex;
+}
+
+.sidebar{
+  position:relative;
+  left: 0;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  padding: 10px 20px;
+  z-index: 100;
+  overflow-y: scroll;
+  box-shadow: 0 0 1px var(--color-gray);
+  transition: all 0.5s ease;
+}
+
+.sidebar.open ~ .name_name {
+  left: 250px;
+  width: calc(100% - 250px);
+}
+
+.sidebar.open {
+  width: 250px;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.menu_content{
+  position: relative;
+}
+
+.menu_items{
+  padding: 0;
+  list-style: none;
+}
+
+
+.option {
+  margin-bottom: 15px;
+}
+
+.sidedbar li Link{
+    list-style: none;
+    height: 100%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+.nav-link {
+  position: relative;
+  font-size: 22px;
+  min-width: 30px;
+  line-height: 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+}
+
+.nav-link::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: calc(100% + 100px);
+  left: -20px;
+}
+.nav-link:hover{
+  background-color: var(--color-gray);
+  color: var(--color-black);
+}
+
+.icon {
+  margin-left: auto;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+.icons {
+  margin-left: auto;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+ .lines {
+  margin-left: 10px;
+}
+
+.para {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+#youtube{
+  display: none;
+}
+#Sidebar_youtube{
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #Sidebar_youtube{
+     display: flex;
+     align-items: flex-start;
+  }
+  #sidebarOpen {
+    font-size: 10px;
+    position: fixed;
+    display: block;
+   margin: 0px 0px 0px 0px;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    color: var(--grey-color);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .icon {
+    font-size: 20px;
+    width: 100%;
+  }
+  #youtube{
+    display: flex;
+
+  }
+  .line-name{
+    display: none;
+  }
+
+  #SidebarOpen{
+    display: none;
+  }
+
+  #Sidear_lineName{
+    display: none;
+  }
+} */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-black: #000000;
+  --color-gray: #aaa;
+  --color-red: #ff0000;
+  --color-blue: #0000ff;
+  --color-orange: #ffa500;
+  --color-white: #ffffff;
+  --color-brown: #a52a2a;
+  --color-pink: #ffc0cb;
+  --color-yellow: #ffff00;
+  --color-green: #008000;
+  --color-purple: #800080;
+}
+.body {
+  min-height: 100vh;
+  font-family: "Rubik", sans-serif;
+}
+
+a {
+  text-transform: none;
+  cursor: pointer;
+  display: inline-block;
+}
+a:hover {
+  text-decoration: none;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: inherit;
+}
+
+main{
+  width: 100%;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+/*============= navbar ============ */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-white);
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  z-index: 1000;
+  box-shadow: 0 0 2px var(--color-white);
+}
+.navbar .logo_item {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-black);
+  margin-left: 10px;
+}
+
+.navbar img {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+.navbar .profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+ .search_bar {
+  height: 40px;
+  max-width: 650px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.search_bar .link_name {
+  height: 40px;
+  width: 40px;
+  background-color: var(--color-gray);
+  border-radius: 50%;
+}
+
+.search_bar input {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  font-size: 20px;
+  outline: none;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border: 1px solid var(--color-gray);
+  padding: 0 20px;
+}
+
+/* .search_bar,.button {
+  left: 250px;
+  width: calc(100% - 250px);
+} */
+
+.search_bar .search {
+  margin-right: 25px;
+}
+.search_bar .button {
+  height: 40px;
+  width: 60px;
+  max-width: 80px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: 1px solid var(--color-gray);
+  margin-right: 25px;
+  column-gap: 20px;
+}
+
+.navbar_content {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.navbar .link {
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--color-black);
+  text-decoration: none;
+  color: var(--color-black);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  align-content: center;
+}
+
+.navbar .link:hover {
+  color: var(--color-white);
+  background-color: var(--color-gray);
+}
+
+.navbar .link .link_name:hover {
+  color: var(--color-black);
+  background-color: var(--color-gray);
+}
+
+/* Sticky header */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .link_icons {
+    display: none;
+  }
+  .sidebarOpen {
+    cursor: pointer;
+    color: var(--color-white);
+  }
+  .sidebar .close {
+    left: -100%;
+  }
+  .search_bar {
+    display: none;
+  }
+  .button {
+    display: none;
+  }
+  .sidebar.close .bottom_content {
+    left: -100%;
+  }
+}
+
+@media screen and (mix-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .search_bar {
+    margin-top: 10px;
+  }
+
+  .search_bar input {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .navbar_content {
+    margin-top: 10px;
+  }
+
+  .navbar_content img {
+    margin-left: 0;
+  }
+}
+
+/* ==================== sidebar ==============================*/
+
+
+.Sidebar{
+  display: flex;
+}
+
+.sidebar{
+  position:relative;
+  left: 0;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  padding: 10px 20px;
+  z-index: 100;
+  overflow-y: scroll;
+  box-shadow: 0 0 1px var(--color-white);
+  transition: all 0.5s ease;
+}
+
+.sidebar.open ~ .name_name {
+  left: 250px;
+  width: calc(100% - 250px);
+}
+
+.sidebar.open {
+  width: 250px;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.menu_content{
+  position: relative;
+}
+
+.menu_items{
+  padding: 0;
+  list-style: none;
+}
+
+
+.option {
+  margin-bottom: 15px;
+}
+
+.sidedbar li Link{
+    list-style: none;
+    height: 100%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+.nav-link {
+  position: relative;
+  font-size: 22px;
+  min-width: 30px;
+  line-height: 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+}
+
+.nav-link::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: calc(100% + 100px);
+  left: -20px;
+}
+.nav-link:hover{
+  background-color: var(--color-gray);
+  color: var(--color-black);
+}
+
+.icon {
+  margin-left: auto;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+.icons {
+  margin-left: auto;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+ .lines {
+  margin-left: 10px;
+}
+
+.para {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+#youtube{
+  display: none;
+}
+#Sidebar_youtube{
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #Sidebar_youtube{
+     display: flex;
+     align-items: flex-start;
+  }
+  #sidebarOpen {
+    font-size: 10px;
+    position: fixed;
+    display: block;
+   margin: 0px 0px 0px 0px;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    color: var(--grey-color);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .icon {
+    font-size: 20px;
+    width: 100%;
+  }
+  #youtube{
+    display: flex;
+
+  }
+  .line-name{
+    display: none;
+  }
+
+  #SidebarOpen{
+    display: none;
+  }
+
+  #Sidear_lineName{
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .sidebar {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #ffffff;
+  }
+
+  .name_main {
+    margin-left: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .name_main {
+    margin-left: 0;
+  }
+}
+
+
+
+
+/* 
+// import React from "react";
+// import "../../Page1/page.css";
+// import { Link } from "react-router-dom";
+// import { CiMenuKebab } from "react-icons/ci";
+
+// const Home = () => {
+//   return (
+//     <div className="home">
+//       <div className="row">
+//         <div className="col-2 col-name">
+//           <div>
+//             <Link to="">
+//               <img
+//                 src="https://i.ytimg.com/vi/L1MLc8GvSLQ/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLAqcbo_YrLLYct5YZGTbaGdGEtCxQ"
+//                 alt="kokkara kokkorakko song"
+//                 className="song"
+//               />
+//             </Link>
+//           </div>
+//           <div className="song_name">
+//             <div className="song-name">
+//               <Link to="">
+//                 <img
+//                   alt="Go to channel"
+//                   src="https://yt3.googleusercontent.com/4F-yeAEe13w301lipg9c63oWgvg9BwbNpn3NILdtZKldTMTlnxgED2an5up86xUoL0bQx73LDQ=s160-c-k-c0x00ffffff-no-rj"
+//                   className="song-img"
+//                 />
+//               </Link>
+//             </div>
+//             <div className="song-item">
+//               <div className="song-item-metadata">
+//                 <Link to="" className="song-link">
+//                   <h6 className="song-item-headline">
+//                     <span className="link-span">
+//                       Kokkara Kokkarako - Video Song | Ghilli | Thalapathy Vijay
+//                       | Trisha | Vidyasagar | Sun Music
+//                     </span>
+//                   </h6>
+//                   <div className="song-item-details">
+//                     <span className="song-item-byline">Vijay Television</span>
+//                     <span className="separator">•</span>
+//                     <span className="song-item-views">385K views</span>
+//                     <span className="separator">•</span>
+//                     <span className="song-item-time">17 hours ago</span>
+//                   </div>
+//                 </Link>
+//               </div>
+//               <button
+//                 className="icon-button"
+//                 aria-label="Action menu"
+//                 aria-haspopup="true"
+//               >
+//                 <svg className="song-svg">
+//                   <CiMenuKebab className="song-icon" />
+//                 </svg>
+//               </button>
+//             </div>
+//           </div>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="https://i.ytimg.com/vi/sDc45_7wfe8/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLDoDUdZ935bnoZ6CmdUX6TDM9ltZQ"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Unnai Paartha Pinbu Naan HD Video Song | Kadhal Mannan Movie HD
+//             Video Song | FLAC Audio Muxed
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="	https://i.ytimg.com/vi/592mNGkpYig/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLA57ylk9I4D1T4O_kkmHGu5sMBTCw"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Vaa Vaathi Full Video Song | Vaathi Movie | Dhanush, Samyuktha | GV
+//             Prakash Kumar | Venky Atluri
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="	https://i.ytimg.com/vi/IEr16FyTLxM/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLAydx9hlURc4-wMWXKK9BY7Xr4q4w"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Appadi Podu 4K Video Song | அப்படி போடு | Ghilli | Thalapathy Vijay
+//             | Trisha | Vidyasagar
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="	https://i.ytimg.com/vi/dG0rN9n3VK8/hq720.jpg?sqp=-…RUAAIhCGAE=&rs=AOn4CLADLXPoaVKVgJI6cwYmvFK3cUkqXQ"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             ENNA SOLLA POGIRAAI REMASTERED |AJITH KUMAR | #tamilsong #ajithkumar
+//             #ajith #ajithism #bassboosted
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="		https://i.ytimg.com/vi/W_-wmz5UX3s/hq720.jpg?sqp=-…SBeKDEwDw==&rs=AOn4CLAiUtWhmyH8aets2y6vIl3PXMl_zA"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Urugi Urugi - Joe - Anand Aravindakshan - Vignesh Ramakrishna -
+//             Siddhu Kumar - 2024
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+
+//           <Link to="">
+//             <img
+//               src="https://i.ytimg.com/vi/FLvxuM1_rDk/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLB_bsKiPAxAnC8fivGhQQubBegCoQ"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Kurumugil Video Song - Sita Ramam (Tamil) | Dulquer | Mrunal |
+//             Vishal | Hanu Raghavapudi
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="https://i.ytimg.com/vi/gRbR2xD3TFo/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLDHKhs5SOSZsiHYa4VbLdDThDG0NQ"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Sakkarai Nilavea - HD Video Song | சக்கரை நிலவே | Youth | Vijay |
+//             Shaheen Khan | Mani Sharma
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="	https://i.ytimg.com/vi/6QtyqR3IF9U/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLBEBSTgBDwAlsJcTD6lF7sc9caPeg"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Paakatha - Lyrical Video | Aaru | Surya | Trisha | Devi Sri Prasad |
+//             Star Hits
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+
+//             <img
+//               src="https://i.ytimg.com/vi/cOoA9UOOu1g/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLCkid3yxqa4boVEfIOSdwoBGz8qKA"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Kaalamellam Kaathiruppen Movie Song | Manimegalaiye Video Song |
+//             Vijay | Dimple | Deva | SPB
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="	https://i.ytimg.com/vi/-QnEDRpTMm0/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLAb19uiULI1cKiyqKz0MvHsJ_BM7A"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             BRAHMĀSTRA (Tamil) | Theethiriyaai Video | Ranbir | Alia | Pritam |
+//             Sid Sriram | Madhan Karky
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="https://i.ytimg.com/vi/bGaZEzOWmjk/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLC7jJHdqXs05aFf-K2cw6Se9ijSmg"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Nimir - Nenjil Maamazhai Tamil Lyric | Udhayanidhi Stalin, Namitha
+//             Pramod, Ajaneesh
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="https://i.ytimg.com/vi/G4v_fqNPsAA/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLBkcJQ1HbMm_Qhu1XgWcZukcxVimQ"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Adada Adada -Official Video | Santosh Subramaniam | Jayam Ravi,
+//             Genelia | Siddharth | DSP
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="https://i.ytimg.com/vi/ZUcvKWegSGw/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLCJBvwe8N4YcqjgTrdmRuM2kVkrrw"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Kanave Nee Naan - Kannum Kannum Kollaiyadithaal | Dulquer S, Ritu V
+//             & Rakshan | Masala Coffee
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="https://i.ytimg.com/vi/C5l0x-pyvkw/hq720.jpg?sqp=-…RUAAIhCGAE=&rs=AOn4CLA6G8jMtUOhjTUvHvDMw-1QqgwnsQ"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Appadi Podu 4K Video Song | அப்படி போடு | Ghilli | Thalapathy Vijay
+//             | Trisha | Vidyasagar
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="https://i.ytimg.com/vi/6mr4cYJ7yew/hq720.jpg?sqp=-…RUAAIhCGAE=&rs=AOn4CLB5vuI0hxKyB2wSLwdK3za80zIr6Q"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Kesariya - Film Version | Brahmāstra | Ranbir | Alia | Pritam |
+//             Arijit | Amitabh
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="https://i.ytimg.com/vi/IrndH9T5NZE/hq720.jpg?sqp=-…RUAAIhCGAE=&rs=AOn4CLAZsENklp4cImUnWsmk4gfy_lsbIg"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             வாரணம் ஆயிரம் - அடியே கொல்லுதே தமிழ் பாடல்வரிகள் | சூர்யா
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="https://i.ytimg.com/vi/L1MLc8GvSLQ/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLAqcbo_YrLLYct5YZGTbaGdGEtCxQ"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Kokkara Kokkarako - Video Song | Ghilli | Thalapathy Vijay | Trisha
+//             | Vidyasagar | Sun Music
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="https://i.ytimg.com/vi/sDc45_7wfe8/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLDoDUdZ935bnoZ6CmdUX6TDM9ltZQ"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Unnai Paartha Pinbu Naan HD Video Song | Kadhal Mannan Movie HD
+//             Video Song | FLAC Audio Muxed
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="	https://i.ytimg.com/vi/592mNGkpYig/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLA57ylk9I4D1T4O_kkmHGu5sMBTCw"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Vaa Vaathi Full Video Song | Vaathi Movie | Dhanush, Samyuktha | GV
+//             Prakash Kumar | Venky Atluri
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="	https://i.ytimg.com/vi/IEr16FyTLxM/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLAydx9hlURc4-wMWXKK9BY7Xr4q4w"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Appadi Podu 4K Video Song | அப்படி போடு | Ghilli | Thalapathy Vijay
+//             | Trisha | Vidyasagar
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="	https://i.ytimg.com/vi/dG0rN9n3VK8/hq720.jpg?sqp=-…RUAAIhCGAE=&rs=AOn4CLADLXPoaVKVgJI6cwYmvFK3cUkqXQ"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             ENNA SOLLA POGIRAAI REMASTERED |AJITH KUMAR | #tamilsong #ajithkumar
+//             #ajith #ajithism #bassboosted
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="		https://i.ytimg.com/vi/W_-wmz5UX3s/hq720.jpg?sqp=-…SBeKDEwDw==&rs=AOn4CLAiUtWhmyH8aets2y6vIl3PXMl_zA"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Urugi Urugi - Joe - Anand Aravindakshan - Vignesh Ramakrishna -
+//             Siddhu Kumar - 2024
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="https://i.ytimg.com/vi/FLvxuM1_rDk/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLB_bsKiPAxAnC8fivGhQQubBegCoQ"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Kurumugil Video Song - Sita Ramam (Tamil) | Dulquer | Mrunal |
+//             Vishal | Hanu Raghavapudi
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="https://i.ytimg.com/vi/gRbR2xD3TFo/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLDHKhs5SOSZsiHYa4VbLdDThDG0NQ"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Sakkarai Nilavea - HD Video Song | சக்கரை நிலவே | Youth | Vijay |
+//             Shaheen Khan | Mani Sharma
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="	https://i.ytimg.com/vi/6QtyqR3IF9U/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLBEBSTgBDwAlsJcTD6lF7sc9caPeg"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Paakatha - Lyrical Video | Aaru | Surya | Trisha | Devi Sri Prasad |
+//             Star Hits
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+
+//             <img
+//               src="https://i.ytimg.com/vi/cOoA9UOOu1g/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLCkid3yxqa4boVEfIOSdwoBGz8qKA"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Kaalamellam Kaathiruppen Movie Song | Manimegalaiye Video Song |
+//             Vijay | Dimple | Deva | SPB
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="	https://i.ytimg.com/vi/-QnEDRpTMm0/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLAb19uiULI1cKiyqKz0MvHsJ_BM7A"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             BRAHMĀSTRA (Tamil) | Theethiriyaai Video | Ranbir | Alia | Pritam |
+//             Sid Sriram | Madhan Karky
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="https://i.ytimg.com/vi/bGaZEzOWmjk/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLC7jJHdqXs05aFf-K2cw6Se9ijSmg"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Nimir - Nenjil Maamazhai Tamil Lyric | Udhayanidhi Stalin, Namitha
+//             Pramod, Ajaneesh
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="https://i.ytimg.com/vi/G4v_fqNPsAA/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLBkcJQ1HbMm_Qhu1XgWcZukcxVimQ"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Adada Adada -Official Video | Santosh Subramaniam | Jayam Ravi,
+//             Genelia | Siddharth | DSP
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="https://i.ytimg.com/vi/ZUcvKWegSGw/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLCJBvwe8N4YcqjgTrdmRuM2kVkrrw"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Kanave Nee Naan - Kannum Kannum Kollaiyadithaal | Dulquer S, Ritu V
+//             & Rakshan | Masala Coffee
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="https://i.ytimg.com/vi/C5l0x-pyvkw/hq720.jpg?sqp=-…RUAAIhCGAE=&rs=AOn4CLA6G8jMtUOhjTUvHvDMw-1QqgwnsQ"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Appadi Podu 4K Video Song | அப்படி போடு | Ghilli | Thalapathy Vijay
+//             | Trisha | Vidyasagar
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="https://i.ytimg.com/vi/6mr4cYJ7yew/hq720.jpg?sqp=-…RUAAIhCGAE=&rs=AOn4CLB5vuI0hxKyB2wSLwdK3za80zIr6Q"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Kesariya - Film Version | Brahmāstra | Ranbir | Alia | Pritam |
+//             Arijit | Amitabh
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="https://i.ytimg.com/vi/IrndH9T5NZE/hq720.jpg?sqp=-…RUAAIhCGAE=&rs=AOn4CLAZsENklp4cImUnWsmk4gfy_lsbIg"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             வாரணம் ஆயிரம் - அடியே கொல்லுதே தமிழ் பாடல்வரிகள் | சூர்யா
+//           </span>
+//         </div>
+//         <div className="col-2 col-name">
+//           <Link to="">
+//             <img
+//               src="https://i.ytimg.com/vi/L1MLc8GvSLQ/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLAqcbo_YrLLYct5YZGTbaGdGEtCxQ"
+//               alt="kokkara kokkorakko song"
+//               className="song"
+//             />
+//           </Link>
+
+//           <span className="link-span">
+//             Kokkara Kokkarako - Video Song | Ghilli | Thalapathy Vijay | Trisha
+//             | Vidyasagar | Sun Music
+//           </span>
+//         </div>
+//     <div className="col-2 col-name">
+//       <Link to="">
+//         <img
+//           src="https://i.ytimg.com/vi/sDc45_7wfe8/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLDoDUdZ935bnoZ6CmdUX6TDM9ltZQ"
+//           alt="kokkara kokkorakko song"
+//           className="song"
+//         />
+//       </Link>
+
+//       <span className="link-span">
+//         Unnai Paartha Pinbu Naan HD Video Song | Kadhal Mannan Movie HD
+//         Video Song | FLAC Audio Muxed
+//       </span>
+//     </div>
+//     <div className="col-2 col-name">
+//       <Link to="">
+//         <img
+//           src="	https://i.ytimg.com/vi/592mNGkpYig/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLA57ylk9I4D1T4O_kkmHGu5sMBTCw"
+//           alt="kokkara kokkorakko song"
+//           className="song"
+//         />
+//       </Link>
+
+//       <span className="link-span">
+//         Vaa Vaathi Full Video Song | Vaathi Movie | Dhanush, Samyuktha | GV
+//         Prakash Kumar | Venky Atluri
+//       </span>
+//     </div>
+//     <div className="col-2 col-name">
+//       <Link to="">
+//         <img
+//           src="	https://i.ytimg.com/vi/IEr16FyTLxM/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLAydx9hlURc4-wMWXKK9BY7Xr4q4w"
+//           alt="kokkara kokkorakko song"
+//           className="song"
+//         />
+//       </Link>
+
+//       <span className="link-span">
+//         Appadi Podu 4K Video Song | அப்படி போடு | Ghilli | Thalapathy Vijay
+//         | Trisha | Vidyasagar
+//       </span>
+//     </div>
+//     <div className="col-2 col-name">
+//       <Link to="">
+//         <img
+//           src="	https://i.ytimg.com/vi/dG0rN9n3VK8/hq720.jpg?sqp=-…RUAAIhCGAE=&rs=AOn4CLADLXPoaVKVgJI6cwYmvFK3cUkqXQ"
+//           alt="kokkara kokkorakko song"
+//           className="song"
+//         />
+//       </Link>
+
+//       <span className="link-span">
+//         ENNA SOLLA POGIRAAI REMASTERED |AJITH KUMAR | #tamilsong #ajithkumar
+//         #ajith #ajithism #bassboosted
+//       </span>
+//     </div>
+//     <div className="col-2 col-name">
+//       <Link to="">
+//         <img
+//           src="		https://i.ytimg.com/vi/W_-wmz5UX3s/hq720.jpg?sqp=-…SBeKDEwDw==&rs=AOn4CLAiUtWhmyH8aets2y6vIl3PXMl_zA"
+//           alt="kokkara kokkorakko song"
+//           className="song"
+//         />
+//       </Link>
+
+//       <span className="link-span">
+//         Urugi Urugi - Joe - Anand Aravindakshan - Vignesh Ramakrishna -
+//         Siddhu Kumar - 2024
+//       </span>
+//     </div>
+//     <div className="col-2 col-name">
+//       <Link to="">
+//         <img
+//           src="https://i.ytimg.com/vi/FLvxuM1_rDk/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLB_bsKiPAxAnC8fivGhQQubBegCoQ"
+//           alt="kokkara kokkorakko song"
+//           className="song"
+//         />
+//       </Link>
+
+//       <span className="link-span">
+//         Kurumugil Video Song - Sita Ramam (Tamil) | Dulquer | Mrunal |
+//         Vishal | Hanu Raghavapudi
+//       </span>
+//     </div>
+//     <div className="col-2 col-name">
+//       <Link to="">
+//         <img
+//           src="https://i.ytimg.com/vi/gRbR2xD3TFo/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLDHKhs5SOSZsiHYa4VbLdDThDG0NQ"
+//           alt="kokkara kokkorakko song"
+//           className="song"
+//         />
+//       </Link>
+
+//       <span className="link-span">
+//         Sakkarai Nilavea - HD Video Song | சக்கரை நிலவே | Youth | Vijay |
+//         Shaheen Khan | Mani Sharma
+//       </span>
+//     </div>
+//     <div className="col-2 col-name">
+//       <Link to="">
+//         <img
+//           src="	https://i.ytimg.com/vi/6QtyqR3IF9U/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLBEBSTgBDwAlsJcTD6lF7sc9caPeg"
+//           alt="kokkara kokkorakko song"
+//           className="song"
+//         />
+//       </Link>
+
+//       <span className="link-span">
+//         Paakatha - Lyrical Video | Aaru | Surya | Trisha | Devi Sri Prasad |
+//         Star Hits
+//       </span>
+//     </div>
+//     <div className="col-2 col-name">
+//       <Link to="">
+
+//         <img
+//           src="https://i.ytimg.com/vi/cOoA9UOOu1g/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLCkid3yxqa4boVEfIOSdwoBGz8qKA"
+//           alt="kokkara kokkorakko song"
+//           className="song"
+//         />
+//       </Link>
+
+//       <span className="link-span">
+//         Kaalamellam Kaathiruppen Movie Song | Manimegalaiye Video Song |
+//         Vijay | Dimple | Deva | SPB
+//       </span>
+//     </div>
+//     <div className="col-2 col-name">
+//       <Link to="">
+//         <img
+//           src="	https://i.ytimg.com/vi/-QnEDRpTMm0/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLAb19uiULI1cKiyqKz0MvHsJ_BM7A"
+//           alt="kokkara kokkorakko song"
+//           className="song"
+//         />
+//       </Link>
+
+//       <span className="link-span">
+//         BRAHMĀSTRA (Tamil) | Theethiriyaai Video | Ranbir | Alia | Pritam |
+//         Sid Sriram | Madhan Karky
+//       </span>
+//     </div>
+//     <div className="col-2 col-name">
+//       <Link to="">
+//         <img
+//           src="https://i.ytimg.com/vi/bGaZEzOWmjk/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLC7jJHdqXs05aFf-K2cw6Se9ijSmg"
+//           alt="kokkara kokkorakko song"
+//           className="song"
+//         />
+//       </Link>
+
+//       <span className="link-span">
+//         Nimir - Nenjil Maamazhai Tamil Lyric | Udhayanidhi Stalin, Namitha
+//         Pramod, Ajaneesh
+//       </span>
+//     </div>
+//     <div className="col-2 col-name">
+//       <Link to="">
+//         <img
+//           src="https://i.ytimg.com/vi/G4v_fqNPsAA/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLBkcJQ1HbMm_Qhu1XgWcZukcxVimQ"
+//           alt="kokkara kokkorakko song"
+//           className="song"
+//         />
+//       </Link>
+
+//       <span className="link-span">
+//         Adada Adada -Official Video | Santosh Subramaniam | Jayam Ravi,
+//         Genelia | Siddharth | DSP
+//       </span>
+//     </div>
+//     <div className="col-2 col-name">
+//       <Link to="">
+//         <img
+//           src="https://i.ytimg.com/vi/ZUcvKWegSGw/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLCJBvwe8N4YcqjgTrdmRuM2kVkrrw"
+//           alt="kokkara kokkorakko song"
+//           className="song"
+//         />
+//       </Link>
+
+//       <span className="link-span">
+//         Kanave Nee Naan - Kannum Kannum Kollaiyadithaal | Dulquer S, Ritu V
+//         & Rakshan | Masala Coffee
+//       </span>
+//     </div>
+//     <div className="col-2 col-name">
+//       <Link to="">
+//         <img
+//           src="https://i.ytimg.com/vi/C5l0x-pyvkw/hq720.jpg?sqp=-…RUAAIhCGAE=&rs=AOn4CLA6G8jMtUOhjTUvHvDMw-1QqgwnsQ"
+//           alt="kokkara kokkorakko song"
+//           className="song"
+//         />
+//       </Link>
+
+//       <span className="link-span">
+//         Appadi Podu 4K Video Song | அப்படி போடு | Ghilli | Thalapathy Vijay
+//         | Trisha | Vidyasagar
+//       </span>
+//     </div>
+//     <div className="col-2 col-name">
+//       <Link to="">
+//         <img
+//           src="https://i.ytimg.com/vi/6mr4cYJ7yew/hq720.jpg?sqp=-…RUAAIhCGAE=&rs=AOn4CLB5vuI0hxKyB2wSLwdK3za80zIr6Q"
+//           alt="kokkara kokkorakko song"
+//           className="song"
+//         />
+//       </Link>
+
+//       <span className="link-span">
+//         Kesariya - Film Version | Brahmāstra | Ranbir | Alia | Pritam |
+//         Arijit | Amitabh
+//       </span>
+//     </div>
+//     <div className="col-2 col-name">
+//       <Link to="">
+//         <img
+//           src="https://i.ytimg.com/vi/IrndH9T5NZE/hq720.jpg?sqp=-…RUAAIhCGAE=&rs=AOn4CLAZsENklp4cImUnWsmk4gfy_lsbIg"
+//           alt="kokkara kokkorakko song"
+//           className="song"
+//         />
+//       </Link>
+
+//       <span className="link-span">
+//         வாரணம் ஆயிரம் - அடியே கொல்லுதே தமிழ் பாடல்வரிகள் | சூர்யா
+//       </span>
+//     </div>
+//   </div>
+// </div>
+//   );
+// };
+
+// export default Home; */
+
+
+/* .home .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.home .col-name {
+  flex: 0 0 calc(25% - 30px);
+  max-width: calc(25% - 30px);
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+.home .song {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+}
+
+.home .song:hover {
+  transform: scale(1.05);
+}
+
+.home .link-span {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.home .song-img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+
+.song_name {
+  display: flex;
+  align-items: center;
+  margin-left: 10px; 
+}
+
+.home Link {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.song-item {
+  margin-left: 10px;
+}
+
+.song-item-details {
+  display: flex;
+  align-items: center;
+}
+
+.separator {
+  margin: 0 5px; 
+}
+
+.song-svg {
+  width: 24px;
+  height: 24px;
+}
+
+.home .icon-button {
+  background: none;
+  border: none;
+  display: flex;
+  cursor: pointer;
+} */
+
+
+/* 
+Responsive styles for desktop 
+@media (min-width: 768px) {
+  .home .col-name {
+    flex: 0 0 calc(20.3333% - 10px);
+    max-width: calc(20.3333% - 10px);
+  }
+}
+
+Responsive styles for tablet and mobile 
+@media (max-width: 767px) {
+  .home .col-name {
+    flex: 0 0 calc(50% - 30px);
+    max-width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 480px) {
+  .home .col-name {
+    flex: 0 0 calc(100% - 30px);
+    max-width: calc(100% - 30px);
+  }
+} */
+
+/* .shorts {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.shorts .shorts_name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+}
+
+.shorts .link-span {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+}
+
+Desktop styles
+@media (min-width: 768px) {
+  .shorts .shorts {
+    width: 50%; 
+    margin: 0 auto;
+  }
+}
+
+Mobile styles
+@media (max-width: 767px) {
+  .shorts .shorts {
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+  }
+
+  .shorts .shorts_name {
+    position: relative;
+    padding-bottom: 56.25%;
+  }
+
+  .shorts .link-span {
+    font-size: 12px;
+  }
+} */
+
+/* .home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.col-name {
+   flex: 1 1 20%;
+  margin: 10px;
+  box-sizing: border-box; 
+    
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.home-container:hover {
+  transform: scale(1.05);
+}
+
+.home-video {
+  position: relative;
+}
+
+.home-video-img {
+  width: 100%;
+  height: auto;
+}
+
+.song {
+  width: 100%;
+  height: auto;
+}
+
+.home-video-thumbnail {
+  position: relative;
+}
+
+.home-video-thumbnail-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 25%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.home-thumbnail-overlay-time-status {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 2px 5px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.details {
+  padding: 10px;
+}
+
+.media-channel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.channel-thumbnail-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.home-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.home-media-item {
+  flex: 1;
+}
+
+.home-media-item-headline {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.home-media-item-details {
+  font-size: 14px;
+  color: #555;
+}
+
+.home-separator {
+  margin: 0 5px;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.home .link-span {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} */
+
+
